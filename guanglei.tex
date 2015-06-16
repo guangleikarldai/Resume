@@ -1,0 +1,184 @@
+\documentclass[11pt]{article}
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[usenames]{color}
+
+\leftmargin=0.25in
+\oddsidemargin=0.25in
+\textwidth=6.0in
+\topmargin=-0.25in
+%\topmargin=-0.5in
+\textheight=9.25in
+
+\raggedright
+
+%\pagenumbering{arabic}
+\pagestyle{empty}
+
+\def\bull{\vrule height 0.7ex width .7ex depth -.1ex }
+% DEFINITIONS FOR RESUME
+
+\newenvironment{changemargin}[2]{%
+  \begin{list}{}{%
+    \setlength{\topsep}{0pt}%
+    \setlength{\leftmargin}{#1}%
+    \setlength{\rightmargin}{#2}%
+    \setlength{\listparindent}{\parindent}%
+    \setlength{\itemindent}{\parindent}%
+    \setlength{\parsep}{\parskip}%
+  }%
+  \item[]}{\end{list}
+}
+
+\newcommand{\lineover}{
+	\begin{changemargin}{-0.05in}{-0.05in}
+		\vspace*{-8pt}
+		\hrulefill \\
+		\vspace*{-2pt}
+	\end{changemargin}
+}
+
+\newcommand{\header}[1]{
+	\begin{changemargin}{-0.5in}{-0.5in}
+		\scshape{#1}\\
+  	\lineover
+	\end{changemargin}
+}
+
+\newcommand{\contact}[4]{
+	\begin{changemargin}{-0.5in}{-0.5in}
+		\begin{center}
+			{\Large \scshape {#1}}\\ \smallskip
+			{#2}\\ \smallskip
+			{#3}\\ \smallskip
+			{#4}\smallskip
+		\end{center}
+	\end{changemargin}
+}
+
+\newenvironment{body} {
+	\vspace*{-16pt}
+	\begin{changemargin}{-0.25in}{-0.5in}
+  }	
+	{\end{changemargin}
+}	
+
+\newcommand{\school}[4]{
+	\textbf{#1} \hfill \emph{#2\\}
+	#3\\
+	#4\\
+}
+
+% END RESUME DEFINITIONS
+
+\begin{document}
+\small
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Name
+% \contact{Your Name}{http://www.yourname.com/}{you@youremailaddress.com}{(555) 555-5555}
+\contact{GUANGLEI DAI}{Apt 902, 1411 Rue du Fort,
+Montreal H3H 2N7}{TEL: (438) 877-6438~~ E-MAIL: guanglei.dai@mail.mcgill.ca}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Objective
+%\header{Career Objective}
+%\begin{body}
+%	\vspace{14pt}
+%	To get a job
+%\end{body}
+%\smallskip
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Education
+\header{Educations}
+\begin{body}
+	\vspace{14pt}
+	\textbf{Master of Engineering, McGill University} {Montreal, Canada}   \hfill \emph{Sep. 2011 - Dec. 2013}{}  \\
+	\textbf{Major:} Electrical and Computer Engineering~~~~~\textbf{\emph{CGPA:} 3.85/4.00} \\
+	\emph{Awards:} Graduate Excel Fellowship(Two times)\\
+
+  \medskip	  
+	\textbf{Bachelor of Science, Shanghai JiaoTong University} {Shanghai, China}   \hfill \emph{Sep. 2007 - Jun. 2011} \\
+	\textbf{Major:} Electrical and Computer Engineering ~~~~~ \\
+\end{body}
+\smallskip
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Skills
+\header{Technical Tools}
+\begin{body}
+	\vspace{14pt}
+	\emph{\textbf{Programming:}}{} Java, Ruby, Ruby on Rails, Objective C, Xcode, Android Studio, C/C++, SQL, ReactJS, React-Flux, Javascript, JQuery, AJAX, PHP, HTML, CSS, Git, Matlab, \LaTeX\\
+\medskip
+	\emph{\textbf{Operating Systems:}}{} OS X, Linux, Windows\\
+%\emph{\textbf{Courses:}}{} Design patterns, Data Structure and Algorithms, Microcomputer Principles and its Interface, Databases, Computer Networks, Computer Architecture, Software Engineering, Wireless Communications
+\end{body}
+\smallskip
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Experience
+\header{Working Experiences}
+\begin{body}
+	\vspace{14pt}
+	\textbf{FullStack Software Engineer}---Fans Entertainment Inc.(Acquired), Montreal, Canada  \hfill \emph{Mar. 2014 - Present}\\
+	\begin{itemize} \itemsep -0pt  % reduce space between items
+		\item Designed and implemented a well-known venue management framework from Server BackEnd design, FrontEnd management software to IOS framework and Android library.
+		\item Joined the start-up when it had only five developers.
+		\item Stepped in on 3 projects that were running behind schedule and shipped them on-time.
+	\end{itemize}
+
+	\textbf{Software Engineer}---Quebec Centre For Biodiversity Science, Montreal, Canada  \hfill \emph{Jan. 2012 - Jan. 2014}\\
+	\begin{itemize} \itemsep -0pt  % reduce space between items
+		\item Refactored database structure to follow object-oriented design.
+		\item Created mechanisms to detect spamming information and block harmful data.
+	\end{itemize}	
+	
+	\textbf{Research Assistant}---McGill University, Montreal, Canada  \hfill \emph{Sep. 2011 - Dec. 2013}\\
+	\vspace*{-4pt}
+	\begin{itemize} \itemsep -0pt  % reduce space between items
+\item Improved the performance of wireless relay networks by employing supervised learning algorithms, which overcomes the limitation of conventional differential detection employed in multi-relay wireless networks over fast-fading environments.
+\item Implement and simulate the proposed schemes with \textbf{C} and Matlab. The proposed scheme outperforms existing technology significantly.
+	\end{itemize}
+	
+	\textbf{Mobile Developer Intern}---Zhongshu Health-Tech Limited, Shanghai, China \hfill \emph{Jan. 2010 - May, 2011}\\
+	\begin{itemize} \itemsep -0pt  % reduce space between items
+		\item Developed portable blogger in JavaME.
+	\end{itemize}
+\end{body}
+\smallskip
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\header{Languages}
+\begin{body}
+	\vspace{14pt}
+	English \& Chinese(fluent), French (Working Proficiency)\\
+\end{body}
+\smallskip
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Awards and Honors
+\header{Volunteer Experience}
+\begin{body}
+	\vspace{14pt}
+\textbf{IT Director}, McGill Chinese Students and Scholars Association, Montreal, Canada \hfill{} \emph{Sep 2011 - June 2013}\\
+\begin{itemize}
+	\item Designed introduction web pages for sponsors and generated newsletters to McGill students.
+	\item Collaborated with colleagues for the organizations of banquets and social events.
+\end{itemize}
+\smallskip
+	\textbf{Webmaster}, McGill Engineering Graduate Student Society, Montreal, Canada \hfill{}  \emph{Sep 2011 - Aug 2012}\\
+\smallskip
+\end{body}
+\smallskip
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\header{Projects}
+\begin{body}
+	\vspace{14pt}
+	\textbf{Real-Time Guest Service in a mobile framework}---Fans Entertainment Inc. Montreal, Canada  \hfill \emph{June. 2014 - Sep. 2014}\\
+	\begin{itemize} \itemsep -0pt  % reduce space between items
+		\item Designed and implemented a well-known venue management framework from Server BackEnd design, FrontEnd management software to IOS framework and Android library.
+	\end{itemize}
+\end{body}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document} 
